@@ -7,10 +7,13 @@
     right: 0;
     padding: 10px;
     background-color: #393536;
+    color: white;
 }
 
 .logo img{
     width: 70px;
+    cursor: pointer;
+    border-radius: 8px;
 }
 
 .logo{
@@ -24,13 +27,11 @@
     flex-direction: row;
     flex-grow: 1;
     justify-content: space-evenly;
-}
-
-.nav {
-    color: white;
-    cursor: pointer;
+    
 }
 
 .nav ul li:hover{
-    text-decoration: underline #1fb2e4;
+    transition: text-decoration 1s;
+    text-decoration: underline #1fb2e4 3px;
+    cursor: pointer;
 }
