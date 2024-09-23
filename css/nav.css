@@ -1,0 +1,36 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #393536;
+}
+
+.logo img{
+    width: 70px;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+.nav {
+    color: white;
+    cursor: pointer;
+}
+
+.nav ul li:hover{
+    text-decoration: underline #1fb2e4;
+}
