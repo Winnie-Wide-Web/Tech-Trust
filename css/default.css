@@ -2,7 +2,14 @@ body{
     background-color: #ffffff;
     padding: 0px;
     margin: 0;
-    font-family: 'Didact Gothic','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Condensed','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
 }
 
 a{
