@@ -1,0 +1,79 @@
+.home{
+    background-image: url(/Tech+Trust-Website-Images/landingpageImg.jpg);
+    height: 100vh;
+    width: 100vw;
+    margin-top: 55px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+
+.homeContent{
+    color: white;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    height: fit-content;
+    box-sizing: border-box;
+    padding-right: 7px;
+    padding-left: 10px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+
+.homeContent h1{
+    width: 100%;
+    font-size: 2.5rem;
+    text-shadow: 10px 10px 9px black;
+    padding-top: 0px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
+.homeContent h1 span{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: white;
+    text-shadow: 5px 5px 9px #316adf;
+}
+
+.homeContent p span{
+    font-weight: 900;
+    color: white;
+    text-shadow: 0px 0px 9px #316adf;
+}
+
+.homeContent p{
+    width: 80%;
+    font-size: 1rem;
+    color: white;
+    text-shadow: 0px 5px 10px black;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.homeContent .homeButtons{
+    width: 100%;
+    display: flex;
+}
+
+.homeContent button{
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(218, 74%, 57%);
+    color: white;
+    font-weight: 900;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.homeButtons button:hover{
+    background-color: hsl(218, 72%, 51%);
+}
