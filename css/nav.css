@@ -3,11 +3,13 @@
     align-items: center;
     justify-content: space-around;
     position: fixed;
+    top: 0;
     left: 0;
     right: 0;
     padding: 10px;
     background-color: #393536;
     color: white;
+    z-index: 5;
 }
 
 .logo img{
@@ -31,7 +33,7 @@
 }
 
 .nav ul li:hover{
-    transition: text-decoration 1s;
+    transition: text-decoration .5s ease-in-out;
     text-decoration: underline #1fb2e4 3px;
     cursor: pointer;
 }
