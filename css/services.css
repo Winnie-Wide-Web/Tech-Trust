@@ -1,0 +1,140 @@
+.services{
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.services .intro{
+    text-align: center;
+}
+
+.services .intro p{
+    font-size: 0.7rem;
+    margin-bottom: -7px;
+}
+
+.services .intro h1{
+    text-align: center;
+    font-size: 2.3rem;
+    padding-bottom: 50px;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #393536;
+}
+
+.services .card{
+    background-color: #9e9999d0;
+    width: 92%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.cardSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .cardInfo .mainInfo{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.card .cardInfo .features ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card .cardInfo  ul li{
+    padding-bottom: 5px;
+}
+
+.card .cardInfo .features svg{
+    fill: black;
+    height: 12px;
+}
+
+
+.card .features h5{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: black;
+}
+
+.mainInfo h5{
+    padding-bottom: 10px;
+}
+
+.card h2{
+    color: black;
+}
+
+.card button{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #55a3df;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    color: white;
+}
+
+.servicebckground{
+    background-color: lightblue;
+    height: 10vh;
+    background-image: url(/Tech+Trust-Website-Images/landingPageImg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicebckground svg, .poultrybackground svg{
+    fill: black;
+}
+
+.servicebckground h2, .poultrybackground h2{
+   backdrop-filter: blur(10px);
+   width: 70%;
+   height: 50%;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 5px 8px black;
+    font-weight: 900;
+    align-self: center;
+}
+
+.poultrybackground{
+    background-image: url(/Tech+Trust-Website-Images/pictureofegg.jpg);
+    height: 10vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
