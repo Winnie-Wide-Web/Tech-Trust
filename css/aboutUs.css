@@ -15,12 +15,17 @@
     margin-bottom: 100px;
     box-sizing: border-box;
     transition: background-size 1s;
-    padding: 20px;
+
+    scale: .7;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 250px 500px;
 
 }
 
 .textSession{
-    background-image: linear-gradient(90deg, #3935368c, rgba(173, 216, 230, 0.584));
+    backdrop-filter: blur(5px);
     height: fit-content;
     padding: 20px;
 }
@@ -46,6 +51,11 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 50px;
+    scale: .7;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 250px 300px;
 }
 
 .tabSection .tabContent {
@@ -57,12 +67,17 @@
     color: white;
     height: fit-content;
     overflow: hidden;
+    font-weight: 800;
+    text-shadow: 5px 5px 10px black;
 }
 
 .tabSection input[type="radio"] {
     display: none;
 }
 
+.tabSection .tabContent label{
+    color: white;
+}
 
 .tabSection input[type="radio"]:checked + label + .tabContent {
     box-sizing: border-box;
@@ -108,6 +123,8 @@
     margin-top: 10px;
     font-weight: 600;
     color: white;
+    font-weight: 800;
+    text-shadow: 5px 5px 10px black;
 }
 
 
@@ -124,10 +141,39 @@
     width: 100%;
 }
 
-@media (min-width:425px){
+@media (min-width:425px) {
     .whyUs ul{
         display: grid;
-        grid-column: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        list-style-type: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tabSection{
+        width: 80%;
+        text-align: center;
+    }
+
+    .aboutUsContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+   
+@media (min-width:1024px) {
+    .whyUs ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        list-style-type: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutUs{
+        background-position: bottom;
     }
 }
 
