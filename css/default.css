@@ -4,7 +4,11 @@ body{
     margin: 0;
     font-family: 'Roboto Condensed','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     overflow-x: hidden;
-    background-color: white;
+    background-color: rgb(234, 228, 228);
+}
+
+html,body{
+    scroll-behavior: smooth;
 }
 
 *{
@@ -15,4 +19,13 @@ body{
 a{
     text-decoration: none;
     color: white;
+}
+
+button{
+    background-color: hsl(218, 74%, 57%);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(218, 72%, 51%);
 }
