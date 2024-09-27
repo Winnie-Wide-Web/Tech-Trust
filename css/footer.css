@@ -6,6 +6,12 @@ footer{
     height: 80vh;
     display: flex;
     justify-content: center;
+
+    scale: .7;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 250px 500px;
 }
 
 footer form{
