@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/aboutUs.css">
     <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/animations.css">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,89 +30,52 @@
         <nav>
             <div class="nav">
                 <div class="logo">
-                    <img src="Tech+Trust-Website-Images/logo.png" alt="tech+TrustLogo">
+                    <a href="#hero">
+                        <img src="Tech+Trust-Website-Images/logo.png" alt="tech+TrustLogo">
+                    </a>
+                    
                 </div>
                 <ul class="navElements">
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Services</li>
-                    <li>Contact</li>
+                    <a href="#hero"><li>Home</li></a>
+                    <a href="#service"><li>Services</li></a>
+                    <a href="#aboutUs"><li>About Us</li></a>
+                   <a href="#contactUs"><li>Contact</li></a>
                 </ul>
             </div>
         </nav>
     </header>
     
     <main>
-        <div class="home">
+        <div id="hero" class="home">
             <div class="homeContent">
                 <h1>Welcome to <span>Techplus Trust Ltd</span></h1>
                 <p>
                     At Techplus Trust Ltd, we offer incubators that ensure a <span>95% hatching success rate.</span> Locally made and ready in 5 days, our machines are easy to use, customizable, and available in solar or grid-powered options. Enjoy full control with 24/7 support from our expert team, ensuring your success.</p>
                     <div class="homeButtons">
-                        <button>Get Started</button>
-                        <button style=" margin-left: 20px;">About Us</button>
+                        <a href="#contactUs">
+                            <button>Contact Us</button>
+                        </a>
+                        
+                        <a href="#aboutUs">
+                            <button style=" margin-left: 20px;">About Us</button>
+                        </a>
+                        
                     </div>
             </div>
             
         </div>
         
-        <div class="aboutUs">
-            <div class="intro">
-                <p>who we are</p>
-                <h1>ABOUT US</h1>
-            </div>
-               
-
-            <div class="tabSection">
-                <input type="radio" name="tab" id="vision" checked="checked">
-                <label for="vision">Our Vision</label>
-                <div class="tabContent">
-                    <p>To transform the poultry industry by promoting innovation, reducing losses, and fostering sustainable growth in rural communities.</p>
-                </div>  
-                
-                <input type="radio" name="tab" id="mission">
-                <label for="mission">Our Mission</label>
-                <div class="tabContent">
-                    <p>We empower rural communities by providing affordable, high-quality incubators and establishing a strong network of decentralized hatching stations. Our commitment extends beyond machinery—we also supply healthy one-day-old and thirty-day-old chicks, raised under ideal conditions to boost productivity and ensure long-term success. By reducing losses, combating malnutrition, and promoting sustainable growth, we aim to transform the poultry industry and uplift communities.</p>
-                </div>
-            </div>
-            
-            <div class="whyUs">
-                <h3>Why Choose Us</h1>
-                <ul>
-                    <li>
-                        <input type="checkbox" name="" id="" checked>
-                        <label for="">95% hatching success rate.</label>
-                        
-                    </li>
-                    <li>
-                        <input type="checkbox" checked>
-                        Fast delivery (within 5 days).</li>
-                        
-                    <li>
-                        <input type="checkbox" checked>
-                        <label> Customizable incubators (solar or grid-powered).</label>
-                       </li>
-                    <li>
-                        <input type="checkbox" checked>
-                        Decentralized hatching stations.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="services">
+        <div id="service" class="services">
             <div class="intro">
                 <p>what we offer</p>
                 <h1>SERVICES</h1>
             </div>
 
-            
-           
             <div class="cardSection">
                 <div class="servicebckground">
                     <h2><span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M42-120v-112q0-33 17-62t47-44q51-26 115-44t141-18q77 0 141 18t115 44q30 15 47 44t17 62v112H42Zm80-80h480v-32q0-11-5.5-20T582-266q-36-18-92.5-36T362-320q-71 0-127.5 18T142-266q-9 5-14.5 14t-5.5 20v32Zm240-240q-66 0-113-47t-47-113h-10q-9 0-14.5-5.5T172-620q0-9 5.5-14.5T192-640h10q0-45 22-81t58-57v38q0 9 5.5 14.5T302-720q9 0 14.5-5.5T322-740v-54q9-3 19-4.5t21-1.5q11 0 21 1.5t19 4.5v54q0 9 5.5 14.5T422-720q9 0 14.5-5.5T442-740v-38q36 21 58 57t22 81h10q9 0 14.5 5.5T552-620q0 9-5.5 14.5T532-600h-10q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T442-600H282q0 33 23.5 56.5T362-520Zm300 160-6-30q-6-2-11.5-4.5T634-402l-28 10-20-36 22-20v-24l-22-20 20-36 28 10q4-4 10-7t12-5l6-30h40l6 30q6 2 12 5t10 7l28-10 20 36-22 20v24l22 20-20 36-28-10q-5 5-10.5 7.5T708-390l-6 30h-40Zm20-70q12 0 21-9t9-21q0-12-9-21t-21-9q-12 0-21 9t-9 21q0 12 9 21t21 9Zm72-130-8-42q-9-3-16.5-7.5T716-620l-42 14-28-48 34-30q-2-5-2-8v-16q0-3 2-8l-34-30 28-48 42 14q6-6 13.5-10.5T746-798l8-42h56l8 42q9 3 16.5 7.5T848-780l42-14 28 48-34 30q2 5 2 8v16q0 3-2 8l34 30-28 48-42-14q-6 6-13.5 10.5T818-602l-8 42h-56Zm28-90q21 0 35.5-14.5T832-700q0-21-14.5-35.5T782-750q-21 0-35.5 14.5T732-700q0 21 14.5 35.5T782-650ZM362-200Z"/></svg></span> Our Incubators <span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M42-120v-112q0-33 17-62t47-44q51-26 115-44t141-18q77 0 141 18t115 44q30 15 47 44t17 62v112H42Zm80-80h480v-32q0-11-5.5-20T582-266q-36-18-92.5-36T362-320q-71 0-127.5 18T142-266q-9 5-14.5 14t-5.5 20v32Zm240-240q-66 0-113-47t-47-113h-10q-9 0-14.5-5.5T172-620q0-9 5.5-14.5T192-640h10q0-45 22-81t58-57v38q0 9 5.5 14.5T302-720q9 0 14.5-5.5T322-740v-54q9-3 19-4.5t21-1.5q11 0 21 1.5t19 4.5v54q0 9 5.5 14.5T422-720q9 0 14.5-5.5T442-740v-38q36 21 58 57t22 81h10q9 0 14.5 5.5T552-620q0 9-5.5 14.5T532-600h-10q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T442-600H282q0 33 23.5 56.5T362-520Zm300 160-6-30q-6-2-11.5-4.5T634-402l-28 10-20-36 22-20v-24l-22-20 20-36 28 10q4-4 10-7t12-5l6-30h40l6 30q6 2 12 5t10 7l28-10 20 36-22 20v24l22 20-20 36-28-10q-5 5-10.5 7.5T708-390l-6 30h-40Zm20-70q12 0 21-9t9-21q0-12-9-21t-21-9q-12 0-21 9t-9 21q0 12 9 21t21 9Zm72-130-8-42q-9-3-16.5-7.5T716-620l-42 14-28-48 34-30q-2-5-2-8v-16q0-3 2-8l-34-30 28-48 42 14q6-6 13.5-10.5T746-798l8-42h56l8 42q9 3 16.5 7.5T848-780l42-14 28 48-34 30q2 5 2 8v16q0 3-2 8l34 30-28 48-42-14q-6 6-13.5 10.5T818-602l-8 42h-56Zm28-90q21 0 35.5-14.5T832-700q0-21-14.5-35.5T782-750q-21 0-35.5 14.5T732-700q0 21 14.5 35.5T782-650ZM362-200Z"/></svg></span></h2>
                 </div>
-                <div class="card">
+                <div id="incubatorCard" class="card">
                     <div class="cardInfo">
                         <ul class="mainInfo">
                             <li> <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="20px" fill="#black"><path d="m347-72-75-124-141-32 13-144-96-108 96-108-13-144 141-32 75-124 133 57 133-57 75 124 141 32-13 144 96 108-96 108 13 144-141 32-75 124-133-57-133 57Zm29-91 104-44 104 44 58-97 110-25-10-111 74-84-74-84 10-111-110-25-58-97-104 44-104-44-58 97-110 24 10 112-74 84 75 84-11 112 110 25 58 96Zm104-317Zm-51 144 238-237-51-51-187 186-85-84-51 51 136 135Z"/></svg> Grid-powered incubators</li>
@@ -118,13 +83,16 @@
                             <li> <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="20px" fill="#black"><path d="m347-72-75-124-141-32 13-144-96-108 96-108-13-144 141-32 75-124 133 57 133-57 75 124 141 32-13 144 96 108-96 108 13 144-141 32-75 124-133-57-133 57Zm29-91 104-44 104 44 58-97 110-25-10-111 74-84-74-84 10-111-110-25-58-97-104 44-104-44-58 97-110 24 10 112-74 84 75 84-11 112 110 25 58 96Zm104-317Zm-51 144 238-237-51-51-187 186-85-84-51 51 136 135Z"/></svg> 240 - 3200 egg capacity incubators</li>
                         </ul>
                         <div class="features">
-                            <h5>Key Features</h5>
+                            <h3>Key Features</h3>
                             <ul>
                                 <li> <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg> Ease-to-use</li>
                                 <li> <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg> 95% success rate</li>
                                 <li> <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg> Durable</li>
                             </ul>
-                            <button>Request A Quote</button>
+                            <a href="#contactUs">
+                                <button>Request A Quote</button>
+                            </a>
+                            
                         </div>
                     </div>
                 </div>
@@ -132,27 +100,100 @@
                 <div class="poultrybackground">
                     <h2><span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-120q-117 0-198.5-81.5T200-400q0-77 25.5-155t66-141.5Q332-760 382-800t98-40q49 0 98.5 40t90 103.5Q709-633 734.5-555T760-400q0 117-81.5 198.5T480-120Zm0-80q83 0 141.5-58.5T680-400q0-57-19.5-120t-49-116.5Q582-690 547-725t-67-35q-31 0-66.5 35t-65 88.5Q319-583 299.5-520T280-400q0 83 58.5 141.5T480-200Zm40-40q17 0 28.5-11.5T560-280q0-17-11.5-28.5T520-320q-50 0-85-35t-35-85q0-17-11.5-28.5T360-480q-17 0-28.5 11.5T320-440q0 83 58.5 141.5T520-240Zm-40-240Z"/></svg></span> Our Poultry Services <span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-120q-117 0-198.5-81.5T200-400q0-77 25.5-155t66-141.5Q332-760 382-800t98-40q49 0 98.5 40t90 103.5Q709-633 734.5-555T760-400q0 117-81.5 198.5T480-120Zm0-80q83 0 141.5-58.5T680-400q0-57-19.5-120t-49-116.5Q582-690 547-725t-67-35q-31 0-66.5 35t-65 88.5Q319-583 299.5-520T280-400q0 83 58.5 141.5T480-200Zm40-40q17 0 28.5-11.5T560-280q0-17-11.5-28.5T520-320q-50 0-85-35t-35-85q0-17-11.5-28.5T360-480q-17 0-28.5 11.5T320-440q0 83 58.5 141.5T520-240Zm-40-240Z"/></svg></span></h2>
                 </div>
-                <div class="card">
+                <div id="poultryCard" class="card">
                     <div class="cardInfo">
                         <ul class="mainInfo">
-                            <h3 style="color: black; padding-bottom: 10px;">We offer</h3>
                             <li> <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="20px" fill="#black"><path d="m347-72-75-124-141-32 13-144-96-108 96-108-13-144 141-32 75-124 133 57 133-57 75 124 141 32-13 144 96 108-96 108 13 144-141 32-75 124-133-57-133 57Zm29-91 104-44 104 44 58-97 110-25-10-111 74-84-74-84 10-111-110-25-58-97-104 44-104-44-58 97-110 24 10 112-74 84 75 84-11 112 110 25 58 96Zm104-317Zm-51 144 238-237-51-51-187 186-85-84-51 51 136 135Z"/></svg>  1-day-old chicks.</li>
                             <li> <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="20px" fill="#black"><path d="m347-72-75-124-141-32 13-144-96-108 96-108-13-144 141-32 75-124 133 57 133-57 75 124 141 32-13 144 96 108-96 108 13 144-141 32-75 124-133-57-133 57Zm29-91 104-44 104 44 58-97 110-25-10-111 74-84-74-84 10-111-110-25-58-97-104 44-104-44-58 97-110 24 10 112-74 84 75 84-11 112 110 25 58 96Zm104-317Zm-51 144 238-237-51-51-187 186-85-84-51 51 136 135Z"/></svg> 30-day-old chicks.</li>
+                            <li> <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="20px" fill="#black"><path d="m347-72-75-124-141-32 13-144-96-108 96-108-13-144 141-32 75-124 133 57 133-57 75 124 141 32-13 144 96 108-96 108 13 144-141 32-75 124-133-57-133 57Zm29-91 104-44 104 44 58-97 110-25-10-111 74-84-74-84 10-111-110-25-58-97-104 44-104-44-58 97-110 24 10 112-74 84 75 84-11 112 110 25 58 96Zm104-317Zm-51 144 238-237-51-51-187 186-85-84-51 51 136 135Z"/></svg> Poultry Farming Equipment.</li>
                             <li> <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="20px" fill="#black"><path d="m347-72-75-124-141-32 13-144-96-108 96-108-13-144 141-32 75-124 133 57 133-57 75 124 141 32-13 144 96 108-96 108 13 144-141 32-75 124-133-57-133 57Zm29-91 104-44 104 44 58-97 110-25-10-111 74-84-74-84 10-111-110-25-58-97-104 44-104-44-58 97-110 24 10 112-74 84 75 84-11 112 110 25 58 96Zm104-317Zm-51 144 238-237-51-51-187 186-85-84-51 51 136 135Z"/></svg> Poultry Business Training</li>
                         </ul>
-                        <button>Request A Quote</button>
+                        <a href="#contactUs">
+                            <button>Request A Quote</button>
+                        </a>
+                        
                     </div>
                 </div>
                     
-                </div>
-
-                
-            </div>
-
-            </div>
             </div>
         </div>
+
+        
+        <div id="aboutUs" class="aboutUs">
+            <div class="textSession">
+                <div class="intro">
+                <p>who we are</p>
+                <h1>ABOUT US</h1>
+            </div>
+               
+
+            <div class="aboutUsContent">
+
+                <div class="whyUs">
+                    <h3>Why Choose Us</h1>
+                    <ul>
+                        <li><input type="checkbox" checked>  Highly efficient with 95% success rate in 21 days </li>
+                        <li><input type="checkbox" checked>  Affordable </li>
+                        <li><input type="checkbox" checked> Accessible </li>
+                        <li><input type="checkbox" checked> 7/7 technical support </li>
+                        <li><input type="checkbox" checked>  Low energy consumption</li>
+                        <li><input type="checkbox" checked> Eco-friendly
+                        </li>
+                        <li><input type="checkbox" checked> On grid and solar incubators </li>
+                        <li><input type="checkbox" checked>  Autonomous and manual machines
+                        </li>
+                    </ul>
+                </div>  
+
+                <div class="tabSection">
+                    <input type="radio" name="tab" id="vision" checked="checked">
+                    <label for="vision">Our Vision</label>
+                    <div class="tabContent">
+                        <p>To transform the poultry industry by promoting innovation, reducing losses, and fostering sustainable growth in rural communities.</p>
+                    </div>  
+                    
+                    <input type="radio" name="tab" id="mission">
+                    <label for="mission">Our Mission</label>
+                    <div class="tabContent">
+                        <p>We empower rural communities by providing affordable, high-quality incubators and establishing a strong network of decentralized hatching stations. Our commitment extends beyond machinery—we also supply healthy one-day-old and thirty-day-old chicks, raised under ideal conditions to boost productivity and ensure long-term success. By reducing losses, combating malnutrition, and promoting sustainable growth, we aim to transform the poultry industry and uplift communities.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
     </main>
-    
+    <footer id="contactUs">
+        <div class="contact-section">
+            <h1>Contact Us</h1>
+            <p>techplustrust@gmail.com
+            </p>
+            <p>+250795904330
+            </p>
+            <div class="icons">
+                <a href="https://www.linkedin.com/company/mytrustplus" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <path fill="#0288D1" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"></path><path fill="#FFF" d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"></path>
+                        </svg>
+                </a>
+                
+                <button onclick="sendEmail()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="red"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                </button>                    
+            </div>
+            
+
+            <form id="contactForm">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+                <div class="button-section">
+                    <button type="button" class="whatsapp-btn" onclick="sendWhatsApp()">Via WhatsApp</button>
+                    <button type="button" class="email-btn" onclick="sendEmail()">Via Email</button>
+                </div>
+            </form>
+        </div>
+    </footer>
 </body>
+<script src="/javascript/app.js"></script>
 </html>
