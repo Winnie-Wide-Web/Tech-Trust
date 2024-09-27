@@ -2,27 +2,24 @@
     height: 100vh;
     box-sizing: border-box;
 }
-
 .services .intro{
     text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
-
 .services .intro p{
     font-size: 0.7rem;
     margin-bottom: -7px;
 }
-
 .services .intro h1{
     text-align: center;
-    font-size: 2.3rem;
-    padding-bottom: 50px;
+    font-size: 2.3rem;    
     font-size: 2rem;
-    font-weight: bolder;
-    color: #393536;
+    font-weight: 900;
+    color: black;
 }
-
 .services .card{
-    background-color: #9e9999d0;
+    /* background-color: #393536; */
     width: 92%;
     text-align: center;
     display: flex;
@@ -38,12 +35,31 @@
     color: white;
 }
 
+#poultryCard{
+    background-image: url(https://i.pinimg.com/474x/15/f0/cd/15f0cd1044ec543ae215de8ff95773b2.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#incubatorCard{
+    background-image: url(https://i.pinimg.com/474x/b8/47/64/b847643f7433a9385b06b14200f00cc0.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 .cardSection{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.card .cardInfo {
+    backdrop-filter: blur(3px);
+    padding: 10px;
 }
 
 .card .cardInfo .mainInfo{
@@ -64,18 +80,24 @@
 
 .card .cardInfo  ul li{
     padding-bottom: 5px;
+    font-size: 1rem;
 }
 
 .card .cardInfo .features svg{
-    fill: black;
+    fill: white;
     height: 12px;
 }
 
+ul li svg{
+    fill: white;}
 
-.card .features h5{
+
+.card .features h3{
     padding-top: 15px;
     padding-bottom: 10px;
     color: black;
+    font-weight: 900;
+    text-shadow: 5px 5px 10px white;
 }
 
 .mainInfo h5{
@@ -89,52 +111,33 @@
 .card button{
     margin-top: 20px;
     padding: 10px;
-    background-color: #55a3df;
+    background-color: #316adf;
     border: none;
     border-radius: 5px;
     font-weight: 700;
     color: white;
 }
-
-.servicebckground{
-    background-color: lightblue;
-    height: 10vh;
-    background-image: url(/Tech+Trust-Website-Images/landingPageImg2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .servicebckground svg, .poultrybackground svg{
-    fill: black;
+    fill: #316adf;
 }
 
 .servicebckground h2, .poultrybackground h2{
    backdrop-filter: blur(10px);
-   width: 70%;
+   width: 100%;
    height: 50%;
-    color: white;
+    color: black;
     text-align: center;
-    text-shadow: 0px 5px 8px black;
+    text-shadow: 0px 5px 8px white;
     font-weight: 900;
     align-self: center;
 }
+.poultrybackground h2{
+    padding-top: 70px;
+}
 
-.poultrybackground{
-    background-image: url(/Tech+Trust-Website-Images/pictureofegg.jpg);
-    height: 10vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media (min-width:425px) {
+    .services{
+        margin-bottom: 200px;
+    }
 
 }
