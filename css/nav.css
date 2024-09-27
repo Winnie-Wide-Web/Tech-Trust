@@ -34,6 +34,14 @@
 
 .nav ul li:hover{
     transition: text-decoration .5s ease-in-out;
-    text-decoration: underline #1fb2e4 3px;
+    text-decoration: underline #316adf 3px;
     cursor: pointer;
+}
+
+#service, #aboutUs {
+    scroll-margin-top: 50px ;
+}
+
+#contactUs{
+    scroll-margin-top: 100px;
 }
