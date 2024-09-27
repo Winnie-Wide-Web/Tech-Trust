@@ -13,6 +13,11 @@
     box-sizing: border-box;
     padding: 10px;
     margin-bottom: 10px;
+    scale: .7;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 250px 500px;
 }
 
 
@@ -78,4 +83,48 @@
 
 .homeButtons button:hover{
     background-color: hsl(218, 72%, 51%);
+}
+
+@media (min-width:1024px) {
+    .home{
+        background-position: top;
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    .homeContent{
+        padding: 30px;
+        max-width: 70%;
+    }
+
+    .homeContent h1{
+        width: 100%;
+        font-size: 2.7rem;
+        text-shadow: 10px 10px 9px black;
+        padding-top: 0px;
+        box-sizing: border-box;
+        padding-bottom: 10px;
+    }
+
+    .homeContent h1 span{
+        font-size: 3rem;
+        font-weight: 900;
+        color: white;
+        text-shadow: 5px 5px 9px #316adf;
+    }
+    
+    .homeContent p span{
+        font-weight: 900;
+        color: white;
+        text-shadow: 0px 0px 9px #316adf;
+    }
+    
+    .homeContent p{
+        width: 60%;
+        font-size: 1.3rem;
+        color: white;
+        text-shadow: 0px 5px 10px black;
+        font-weight: 700;
+        padding-bottom: 20px;
+    }
 }
