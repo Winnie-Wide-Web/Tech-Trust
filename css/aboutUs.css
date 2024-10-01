@@ -1,5 +1,5 @@
 .aboutUs{
-    height: fit-content;
+    min-height: 100vh;
     width: 100vw;
     z-index: 2;
     order: 2;
@@ -12,7 +12,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 100px;
     box-sizing: border-box;
     transition: background-size 1s;
 
@@ -21,11 +20,15 @@
     animation: fade-in linear forwards;
     animation-timeline: view();
     animation-range: 250px 500px;
+}
 
+.aboutUsContent{
+    backdrop-filter: blur(5px);
+    height: 100vh;
+    width: 100%;
 }
 
 .textSession{
-    backdrop-filter: blur(5px);
     height: fit-content;
     padding: 20px;
 }
@@ -55,7 +58,7 @@
     opacity: 0;
     animation: fade-in linear forwards;
     animation-timeline: view();
-    animation-range: 250px 300px;
+    animation-range: 250px 250px;
 }
 
 .tabSection .tabContent {
@@ -75,8 +78,9 @@
     display: none;
 }
 
-.tabSection .tabContent label{
+.tabSection label{
     color: white;
+    text-overflow: 5px 5px 10px black;
 }
 
 .tabSection input[type="radio"]:checked + label + .tabContent {
@@ -97,6 +101,7 @@
     font-weight: 800;
     font-size: 1.2rem;
     color: white;
+    text-overflow: 0px 0px 1px black;
 }
 
 
@@ -104,8 +109,9 @@
     text-align: center;
     padding-top: 15px;
     padding-bottom: 10px;
-    color: black;
-    text-shadow: 5px 5px 10px white;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+    text-decoration: underline;
 }
 
 .whyUs ul{
@@ -150,6 +156,10 @@
         justify-content: center;
     }
 
+    .whyUs ul li{
+        text-align: center;
+    }
+
     .tabSection{
         width: 80%;
         text-align: center;
@@ -170,10 +180,24 @@
         list-style-type: none;
         align-items: center;
         justify-content: center;
+        font-size: 1.2rem;
+        text-align: center;
+        width: fit-content;
+        padding-left: 90px;
+        padding-bottom: 20px;
+        padding-top: 8px;
+    }
+
+    .whyUs h3{
+        font-size: 1.3rem;
     }
 
     .aboutUs{
-        background-position: bottom;
+        background-position: top;
+    }
+
+    .tabSection{
+        font-size: 1.2rem;
     }
 }
 
