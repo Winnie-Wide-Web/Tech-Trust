@@ -1,6 +1,7 @@
 .services{
     height: 100vh;
     box-sizing: border-box;
+    background-size: cover;
 
     scale: .7;
     opacity: 0;
@@ -54,7 +55,7 @@
     opacity: 0;
     animation: fade-in linear forwards;
     animation-timeline: view();
-    animation-range: 250px 200px;
+    animation-range: 250px 400px;
 }
 
 #incubatorCard{
@@ -169,7 +170,7 @@ ul li svg{
 @media (min-width:1024px){
     .card .cardInfo .features ul{
         display: flex;
-        width: 400px;
+        width: 600px;
         align-self: center;
         justify-self: center;
 
