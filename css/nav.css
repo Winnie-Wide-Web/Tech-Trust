@@ -9,7 +9,8 @@
     padding: 10px;
     background-color: #393536;
     color: white;
-    z-index: 5;
+    z-index: 2;
+    margin-top: -57px;
 }
 
 .logo img{
