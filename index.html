@@ -22,8 +22,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Tech+Trust | Your Incubators Made in Kigali</title>
+    <meta name="description" content="At Tech+Trust Ltd, we provide locally made incubators with a 95% hatching success rate, ready in just 5 days. Our machines are customizable, easy to use, and available in solar or grid-powered options. With 24/7 expert support, we ensure your hatching success.">
 
-    <title>Tech Plus Trust</title>
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "LocalBusiness",
+          "name": "TechplusTrust",
+          "description": "At Tech+Trust Ltd, we offer locally made incubators that ensure a 95% hatching success rate. Our machines are customizable, ready in 5 days, and available in solar or grid-powered options. We provide 24/7 expert support for your hatching needs.",
+          "url": "http://www.techplustrust.com",
+          "logo": "http://www.techplustrust.com/logo.png",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Kigali",
+            "addressCountry": "RW"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "techplustrust@gmail.com",
+            "telephone": "+250795904330",
+            "contactType": "Customer Service"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/company/mytrustplus"
+        }
+    </script>
 </head>
 
 <body>
@@ -192,14 +216,14 @@
             </div>
             
 
-            <form id="contactForm">
+            <form action="#" id="contactForm">
                 <input type="text" id="name" name="name" placeholder="Your Name" required>
                 <input type="email" id="email" name="email" placeholder="Your Email" required>
                 <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
 
                 <div class="button-section">
                     <button type="button" class="whatsapp-btn" onclick="sendWhatsApp()">Via WhatsApp</button>
-                    <button type="button" class="email-btn" onclick="sendEmail()">Via Email</button>
+                    
                 </div>
             </form>
         </div>
