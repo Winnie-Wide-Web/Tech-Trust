@@ -1000,6 +1000,11 @@ img {
         grid-template-columns: 1fr;
     }
 }
+.phone-number p {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
 
 @media (max-width: 576px) {
     .container {
