@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Impact — Tech+Trust</title>
+    <link rel="icon" href="Tech+Trust-Website-Images/tabImage.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #234b13;
+            --primary-light: #3a7023;
+            --secondary-color: #e4943b;
+            --secondary-light: #f3ac5d;
+            --light-gray: #f8f9fa;
+            --medium-gray: #e9ecef;
+            --dark-gray: #495057;
+            --white: #fff;
+            --black: #212121;
+            --border-radius-sm: 6px;
+            --border-radius-md: 12px;
+            --border-radius-lg: 16px;
+            --spacing-xs: 8px;
+            --spacing-sm: 16px;
+            --spacing-md: 24px;
+            --spacing-lg: 32px;
+            --spacing-xl: 48px;
+            --shadow-sm: 0 2px 6px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.15);
+            --shadow-lg: 0 8px 20px rgba(0,0,0,0.2);
+            --transition-fast: 0.3s ease;
+            --transition-medium: 0.5s ease;
+            --heading-font: 'Montserrat', sans-serif;
+            --body-font: 'Poppins', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--body-font);
+            background: var(--white);
+            color: var(--dark-gray);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--heading-font);
+            color: var(--primary-color);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-sm);
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+            padding: var(--spacing-xs) 0;
+        }
+
+        .header-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 var(--spacing-sm);
+        }
+
+        .logo img {
+            height: 50px;
+            transition: all var(--transition-fast);
+        }
+
+         /* Navbar */
+    #header { position: fixed; top: 0; width: 100%; background: #fff; box-shadow: 0 2px 15px rgba(0,0,0,0.1); z-index: 1000; }
+    .header-wrapper { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
+    .logo img { height: 50px; }
+
+    .nav-list { display: flex; gap: 25px; list-style: none;}
+    .nav-link {
+        color: #1a202c;
+        font-weight: 500;
+        position: relative;
+        padding: 5px 0;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+    .nav-link:hover,
+    .nav-link.active { color: #2d5016; }
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #2d5016;
+        transition: width 0.3s ease;
+    }
+     .nav-link:hover::after,
+    .nav-link.active::after { width: 100%; }
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: var(--spacing-xs);
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            height: 3px;
+            width: 25px;
+            background: var(--primary-color);
+            border-radius: 2px;
+            transition: all var(--transition-fast);
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        /* Hero Section */
+        .impact-hero {
+            position: relative;
+            height: 60vh;
+            background: linear-gradient(rgba(35, 75, 19, 0.85), rgba(35, 75, 19, 0.8)), url('https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?ixlib=rb-4.0.3') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding-top: 80px;
+        }
+
+        .impact-hero .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--spacing-md);
+            position: relative;
+            z-index: 2;
+        }
+
+        .impact-hero .hero-title {
+             font-size: 2.5rem;
+             margin-bottom: 1rem;
+             line-height: 1.2;
+              color: var(--white);
+        }
+
+        .impact-hero .hero-title span {
+            display: block;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .impact-hero .hero-description {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Section Styling */
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+            padding: 0 var(--spacing-sm);
+        }
+
+        .section-subtitle {
+            display: block;
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--secondary-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-sm);
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-divider {
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+            margin: 0 auto;
+            margin-top: var(--spacing-sm);
+            border-radius: 2px;
+        }
+
+        /* Impact Metrics Section */
+        .impact-kpis {
+            background: #f9f9f9;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .kpi-grid {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: wrap;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .kpi-item {
+            flex: 1;
+            min-width: 200px;
+            padding: 30px 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        .kpi-item:last-child {
+            border-right: none;
+        }
+
+        .kpi-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #234b13;
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .kpi-label {
+            font-size: 1rem;
+            color: #555;
+            margin: 0;
+        }
+
+        /* Coverage Section */
+        .coverage-section {
+            padding: var(--spacing-xl) 0;
+            background: var(--light-gray);
+        }
+
+        .provinces-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .province-item {
+            display: flex;
+            align-items: center;
+            padding: var(--spacing-md);
+            background: var(--white);
+            border-radius: var(--border-radius-md);
+            font-weight: 600;
+            transition: all var(--transition-fast);
+            box-shadow: var(--shadow-sm);
+            cursor: pointer;
+        }
+
+        .province-item i {
+            color: var(--primary-color);
+            margin-right: var(--spacing-sm);
+            font-size: 1.2rem;
+            transition: color var(--transition-fast);
+        }
+
+        .province-item:hover {
+            background: var(--secondary-color);
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .province-item:hover i {
+            color: var(--white);
+        }
+
+        .map-container {
+            text-align: center;
+            margin-top: var(--spacing-lg);
+            width: 100%;
+            padding-left: 0;  /* remove extra padding */
+            padding-right: 0;
+        }
+
+        .map-container h3 {
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-md);
+            font-size: 1.8rem;
+        }
+
+        .map-visual {
+            position: relative;
+            width: 100%;      /* full width of container */
+            max-width: 100%;  /* ensure it fills container */
+            height: 0;
+            padding-bottom: 55%; /* maintain aspect ratio */
+            margin: 0 auto;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-md);
+            overflow: hidden;
+            background: var(--medium-gray);
+        }
+
+        .rwanda-map iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: var(--border-radius-lg);
+        }
+
+        .map-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        .coverage-marker {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            box-shadow: var(--shadow-md);
+            transform: translate(-50%, -50%);
+            transition: all var(--transition-fast);
+            z-index: 11;
+        }
+
+        .coverage-marker:hover {
+            background: var(--secondary-color);
+            transform: translate(-50%, -50%) scale(1.05);
+        }
+
+        .marker-dot {
+            width: 12px;
+            height: 12px;
+            background: var(--secondary-color);
+            border-radius: 50%;
+            border: 2px solid var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            transition: background var(--transition-fast);
+        }
+
+        .coverage-marker:hover .marker-dot {
+            background: var(--primary-color);
+        }
+
+        /* Marker positions */
+        .kigali-marker {
+            top: 38%;
+            left: 52%;
+        }
+
+        .southern-marker {
+            top: 68%;
+            left: 53%;
+        }
+
+        .western-marker {
+            top: 45%;
+            left: 25%;
+        }
+
+        .map-legend {
+            margin-top: var(--spacing-md);
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 15px;
+            background: var(--white);
+            border-radius: 20px;
+            box-shadow: var(--shadow-sm);
+            font-size: 0.9rem;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .legend-color.active {
+            background: var(--primary-color);
+        }
+
+        .legend-color.inactive {
+            background: var(--medium-gray);
+        }
+
+        /* Partners Section */
+        .partners-clean {
+            padding: 60px 20px;
+            text-align: center;
+            background: #fff;
+        }
+
+        .partners-title {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            font-weight: 600;
+            color: #234b13;
+        }
+
+        .partners-title span {
+            color: #e4943b;
+        }
+
+      .partners-logos {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-wrap: wrap;
+         gap: 80px; /* Increased space between logos */
+         margin-top: 30px; /* Add some space above logos */
+        }
+
+
+        .partners-logos img {
+          max-height: 150px;      /* Bigger height */
+          max-width: 200px;       /* Bigger width */
+          object-fit: contain;
+          transition: transform 0.3s ease, filter 0.3s ease;
+          filter: brightness(0.9); /* Slightly dimmed by default for effect */
+       }
+
+      .partners-logos img:hover {
+          transform: scale(1.1);   /* Slight zoom on hover */
+          filter: brightness(1);    /* Full brightness on hover */
+        }
+
+
+        /* SDG Section */
+        .impact-sdgs {
+            background: transparent;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .sdg-grid {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: wrap;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .sdg-item {
+            flex: 1;
+            min-width: 150px;
+            padding: 30px 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        .sdg-item:last-child {
+            border-right: none;
+        }
+
+        .sdg-item img {
+            max-height: 60px;
+            margin-bottom: 15px;
+        }
+
+        .sdg-item p {
+            font-size: 1rem;
+            font-weight: 500;
+            margin: 0;
+            color: #234b13;
+        }
+
+        /* Rwanda Goals Section */
+        /* Rwanda Development Goals styled like SDGs */
+.rwanda-goals-section {
+    background: transparent; /* no background box */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.rwanda-goals-section .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.rwanda-goals-section .sdg-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.rwanda-goals-section .sdg-item {
+    flex: 1;
+    min-width: 180px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.rwanda-goals-section .sdg-item .goal-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.rwanda-goals-section .sdg-item .goal-description {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+        /* Footer */
+        .footer {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: var(--spacing-xl) 0 0;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+            padding-bottom: var(--spacing-lg);
+        }
+
+        .footer-logo {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .footer-logo img {
+          height: 120px;
+          margin-bottom: var(--spacing-sm);
+          filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.2));
+       }
+
+        .footer-logo p {
+          opacity: 0.8;
+          }
+
+        .footer h3 {
+            color: var(--white);
+            margin-bottom: var(--spacing-sm);
+            font-size: 1.3rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .footer h3::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: var(--secondary-color);
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+            opacity: 0.8;
+        }
+
+        .footer a:hover {
+            color: var(--secondary-color);
+            opacity: 1;
+        }
+
+        .footer-contact p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            opacity: 0.8;
+        }
+
+        .footer-contact p i {
+            margin-right: 10px;
+            color: var(--secondary-color);
+            width: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: var(--spacing-sm);
+            margin-top: var(--spacing-sm);
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: all var(--transition-fast);
+        }
+
+        .social-links a:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: var(--spacing-md) 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        /* Flag Icons */
+        .flag-icon {
+            display: inline-block;
+            margin-right: 8px;
+            font-size: 1.1em;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .scroll-animate {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .scroll-animate.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .impact-hero .hero-title {
+                font-size: 2rem;
+            }
+            
+            .impact-hero .hero-title span {
+                font-size: 2.8rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-list {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                right: 20px;
+                background: var(--white);
+                padding: 20px;
+                border-radius: var(--border-radius-md);
+                box-shadow: var(--shadow-md);
+                width: 200px;
+                z-index: 1000;
+            }
+            
+            .nav-list.active {
+                display: flex;
+            }
+            
+            .mobile-menu-btn {
+                display: flex;
+            }
+            
+            .map-visual {
+                padding-bottom: 65%;
+            }
+            
+            .coverage-marker {
+                font-size: 10px;
+                padding: 6px 10px;
+            }
+            
+            .marker-dot {
+                width: 10px;
+                height: 10px;
+            }
+            
+            .metric-number {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .impact-hero {
+                height: 50vh;
+            }
+            
+            .impact-hero .hero-title {
+                font-size: 1.8rem;
+            }
+            
+            .impact-hero .hero-title span {
+                font-size: 2.2rem;
+            }
+            
+            .impact-hero .hero-description {
+                font-size: 1rem;
+            }
+            
+            .map-visual {
+                padding-bottom: 75%;
+            }
+            
+            .coverage-marker {
+                font-size: 8px;
+                padding: 4px 8px;
+            }
+            
+            .marker-dot {
+                width: 8px;
+                height: 8px;
+            }
+            
+            .map-legend {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .metrics-grid,
+            .partners-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .provinces-grid,
+            .sdg-grid,
+            .rwanda-goals-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+ <header id="header">
+  <div class="header-wrapper" style="display:flex; align-items:center; justify-content:space-between; padding:15px 20px;">
+
+    <!-- Left: Logo -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="Tech+Trust-Website-Images/logo.png" alt="Tech+Trust Logo" style="height:50px;">
+      </a>
+    </div>
+
+    <!-- Center: Main Nav -->
+    <nav class="nav-menu" style="margin-right:20px;"> <!-- add bigger margin-right -->
+      <ul class="nav-list" style="display:flex; gap:25px; list-style:none; margin:0; padding:0;">
+        <li><a href="index.html#hero" class="nav-link">Home</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#about" class="nav-link">About Us</a></li>
+        <li><a href="impact.html" class="nav-link active ">Impact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Right: FAQ & Contact -->
+    <div class="right-nav" style="display:flex; gap:20px; ">
+      <a href="faq.html" class="nav-link ">FAQ</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </div>
+
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="impact-hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title scroll-animate"><span>Our Impact</span>Transforming Rwandan Poultry Farming</h1>
+            <p class="hero-description scroll-animate">Discover how Tech+Trust is revolutionizing poultry farming across Rwanda through innovative technology, sustainable partnerships, and measurable impact on communities.</p>
+        </div>
+    </div>
+</section>
+<!-- Impact Metrics -->
+<section class="impact-kpis">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-subtitle">Our Performance</span>
+            <h2 class="section-title">Key Impact Metrics</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="kpi-grid">
+            <div class="kpi-item">
+                <h3 class="kpi-number">90-95%</h3>
+                <p class="kpi-label">Hatch Success Rate</p>
+            </div>
+            <div class="kpi-item">
+                <h3 class="kpi-number">13</h3>
+                <p class="kpi-label">Farmers Empowered</p>
+            </div>
+            <div class="kpi-item">
+                <h3 class="kpi-number">10</h3>
+                <p class="kpi-label">Incubators Installed</p>
+            </div>
+            <div class="kpi-item">
+                <h3 class="kpi-number">48,000+</h3>
+                <p class="kpi-label">Chicks Hatched</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Coverage -->
+<section class="coverage-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-subtitle">Our Reach</span>
+            <h2 class="section-title">Where Our Customers Thrive</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="provinces-grid">
+            <div class="province-item scroll-animate">
+                <i class="fas fa-map-marker-alt"></i> Southern Province
+            </div>
+            <div class="province-item scroll-animate">
+                <i class="fas fa-map-marker-alt"></i> Western Province
+            </div>
+            <div class="province-item scroll-animate">
+                <i class="fas fa-map-marker-alt"></i> Kigali City
+            </div>
+        </div>
+        <div class="map-container">
+            <h3 class="scroll-animate">Rwanda Coverage Map</h3>
+            <div class="map-visual scroll-animate">
+                <div class="rwanda-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2039297.4285398116!2d29.024867999999995!3d-1.9440727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19c29654e73840e3%3A0x7490b026cbcaa103!2sRwanda!5e0!3m2!1sen!2sus!4v1635789012345!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="map-overlay">
+                        <div class="coverage-marker kigali-marker" title="Kigali City">
+                            <div class="marker-dot"></div>
+                            <span>Kigali</span>
+                        </div>
+                        <div class="coverage-marker southern-marker" title="Southern Province">
+                            <div class="marker-dot"></div>
+                            <span>Southern</span>
+                        </div>
+                        <div class="coverage-marker western-marker" title="Western Province">
+                            <div class="marker-dot"></div>
+                            <span>Western</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map-legend">
+                <div class="legend-item">
+                    <div class="legend-color active"></div>
+                    <span>Current Coverage</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color inactive"></div>
+                    <span>Future Expansion</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Partners -->
+<section class="partners-clean">
+    <div class="container">
+        <h2 class="partners-title">In <span>Partnership</span> with</h2>
+        <div class="partners-logos">
+            <img src="Tech+Trust-Website-Images/carnegy mellon .png" alt="Carnegie Mellon University">
+            <img src="Tech+Trust-Website-Images/Alu.jpeg" alt="ALX Ventures">
+            <img src="Tech+Trust-Website-Images/ALX.jpeg" alt="African Leadership University">
+            <img src="Tech+Trust-Website-Images/Hanga.jpeg" alt="Rwanda Poultry Industry Association">
+            <img src="Tech+Trust-Website-Images/rwanda.jpeg" alt="Rwanda Govt Partner">
+        </div>
+    </div>
+</section>
+
+
+<!-- SDGs -->
+<section class="impact-sdgs">
+    <div class="container">
+        <h2 class="section-title">Aligned with  SDGs</h2>
+        <div class="sdg-grid">
+            <div class="sdg-item">
+               
+                <p>No Poverty</p>
+            </div>
+            <div class="sdg-item">
+               
+                <p>Zero Hunger</p>
+            </div>
+            <div class="sdg-item">
+              
+                <p>Decent Work & Economic Growth</p>
+            </div>
+            <div class="sdg-item">
+                
+                <p>Industry, Innovation & Infrastructure</p>
+            </div>
+            <div class="sdg-item">
+               
+                <p>Responsible Consumption & Production</p>
+            </div>
+            <div class="sdg-item">
+                <p>Partnerships for the Goals</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Rwanda Development Goals -->
+<section class="rwanda-goals-section">
+    <div class="container">
+        <h2 class="section-title scroll-animate">Rwanda's Development Goals</h2>
+        <div class="sdg-grid">
+            <div class="sdg-item scroll-animate">
+                <p class="goal-title">LDS</p>
+                <span class="goal-description">Livestock Development Strategy</span>
+            </div>
+            <div class="sdg-item scroll-animate">
+                <p class="goal-title">PSTA 5</p>
+                <span class="goal-description">Strategic Plan for Agriculture Transformation</span>
+            </div>
+            <div class="sdg-item scroll-animate">
+                <p class="goal-title">NST 2</p>
+                <span class="goal-description">National Strategy for Transformation</span>
+            </div>
+            <div class="sdg-item scroll-animate">
+                <p class="goal-title">Vision 2050</p>
+                <span class="goal-description">Rwanda's Long-term Vision</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div>
+                <div class="footer-logo">
+                    <img src="Tech+Trust-Website-Images/logo.png" alt="Tech+Trust Logo">
+                </div>
+                <p>Innovative incubation solutions for poultry farmers.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="impact.html">Impact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-envelope"></i> techplustrust@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i> <span class="flag-icon">🇬🇧/🇫🇷</span> +250 795 904 330</p>
+                <p><i class="fas fa-phone-alt"></i> <span class="flag-icon">🇷🇼</span> +250 786 812 474</p>
+                <p><i class="fas fa-map-marker-alt"></i> Kamonyi, Karongi</p>
+                <div class="social-links">
+                    <a href="https://x.com/Techplusrwanda" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/techplus-trust-ltd" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/techplustrust.ltd" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 Tech+Trust Ltd. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-list');
+        
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                mobileMenuBtn.classList.toggle('active');
+            });
+        }
+        
+        // Scroll animation
+        const scrollElements = document.querySelectorAll('.scroll-animate');
+        
+        const elementInView = (el, dividend = 1) => {
+            const elementTop = el.getBoundingClientRect().top;
+            return (
+                elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend
+            );
+        };
+        
+        const displayScrollElement = (element) => {
+            element.classList.add('visible');
+        };
+        
+        const hideScrollElement = (element) => {
+            element.classList.remove('visible');
+        };
+        
+        const handleScrollAnimation = () => {
+            scrollElements.forEach((el) => {
+                if (elementInView(el, 1.2)) {
+                    displayScrollElement(el);
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', () => {
+            handleScrollAnimation();
+        });
+        
+        // Initial check on page load
+        handleScrollAnimation();
+    });
+</script>
+
+</body>
+</html>

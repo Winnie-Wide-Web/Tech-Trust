@@ -1,0 +1,337 @@
+/* IMPACT.CSS - Styles for Impact Page */
+
+/* Impact Hero Section */
+.impact-hero {
+    position: relative;
+    height: 60vh;
+    background-image: url('../Tech+Trust-Website-Images/impact-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.impact-hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(35, 75, 19, 0.8), rgba(35, 75, 19, 0.7));
+}
+
+.impact-hero .hero-content {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    color: var(--white);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.impact-hero .hero-title {
+    color: var(--white);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.impact-hero .hero-title span {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.impact-hero .hero-description {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* KPI Section */
+.impact-kpi {
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+    color: var(--white);
+}
+
+.impact-kpi .section-header {
+    margin-bottom: var(--spacing-lg);
+}
+
+.impact-kpi .section-title,
+.impact-kpi .section-subtitle {
+    color: var(--white);
+}
+
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.kpi-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.kpi-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-xs);
+    font-family: var(--heading-font);
+}
+
+.kpi-label {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+/* Coverage Section */
+.coverage-section {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--white);
+}
+
+.provinces-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+}
+
+.province-item {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-md);
+    background-color: var(--light-gray);
+    border-radius: var(--border-radius-md);
+    font-weight: 600;
+}
+
+.province-item i {
+    color: var(--primary-color);
+    margin-right: var(--spacing-sm);
+    font-size: 1.2rem;
+}
+
+.map-container {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+}
+
+.map-container h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.map-visual {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #f0f0f0;
+    border-radius: var(--border-radius-md);
+    margin: 0 auto;
+    border: 2px solid var(--medium-gray);
+}
+
+.map-region {
+    position: absolute;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.map-region.south {
+    bottom: 60px;
+    left: 120px;
+}
+
+.map-region.west {
+    top: 100px;
+    left: 60px;
+}
+
+.map-region.kigali {
+    top: 70px;
+    right: 80px;
+}
+
+/* Partners Section */
+.partners-section {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--light-gray);
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.partner-card {
+    background-color: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-fast);
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.partner-icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary-light);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto var(--spacing-sm);
+    font-size: 1.8rem;
+}
+
+.partner-card h3 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+/* SDG Section */
+.sdg-section {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--white);
+}
+
+.sdg-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.sdg-item {
+    padding: var(--spacing-md);
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: var(--border-radius-md);
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .impact-hero .hero-title {
+        font-size: 2rem;
+    }
+    
+    .impact-hero .hero-title span {
+        font-size: 2.5rem;
+    }
+    
+    .kpi-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .provinces-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .map-visual {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .map-region {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .sdg-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .kpi-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .partners-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sdg-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .map-region.south {
+        bottom: 50px;
+        left: 90px;
+    }
+    
+    .map-region.west {
+        top: 80px;
+        left: 40px;
+    }
+    
+    .map-region.kigali {
+        top: 50px;
+        right: 50px;
+    }
+}
+/* Impact Hero Section */
+.impact-hero {
+    position: relative;
+    height: 60vh;
+    background-image: url('../Tech+Trust-Website-Images/impact-hero.jpg'); /* your background */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.impact-hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(35, 75, 19, 0.8), rgba(35, 75, 19, 0.7));
+}
+/* Preloader */
+#preloader {
+  background: #000 url('../Tech+Trust-Website-Images/spin7.gif') no-repeat center center;
+  background-size: 10%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech+Trust Ltd - FAQ & Services</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="Tech+Trust-Website-Images/tabImage.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background: #f5f5f5; color: #1a202c; padding-top: 80px; }
+
+    /* Navbar */
+    #header { position: fixed; top: 0; width: 100%; background: #fff; box-shadow: 0 2px 15px rgba(0,0,0,0.1); z-index: 1000; }
+    .header-wrapper { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
+    .logo img { height: 50px; }
+
+    .nav-list { display: flex; gap: 25px; list-style: none;}
+    .nav-link {
+        color: #1a202c;
+        font-weight: 500;
+        position: relative;
+        padding: 5px 0;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+    .nav-link:hover,
+    .nav-link.active { color: #2d5016; }
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #2d5016;
+        transition: width 0.3s ease;
+    }
+    .nav-link:hover::after,
+    .nav-link.active::after { width: 100%; }
+
+    /* Main container */
+    .main-container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    .header { text-align: center; margin-bottom: 40px; }
+    .header h1 { font-size: 2.5rem; font-weight: 800; color: #2d5016; }
+    .header p { color: #4a5568; margin-top: 10px; font-size: 16px; }
+
+    .language-toggle { text-align: center; margin-bottom: 30px; }
+    .lang-btn { padding: 10px 25px; border: none; border-radius: 20px; margin: 0 25px; cursor: pointer; font-weight: 600; }
+    .lang-btn.active { background: linear-gradient(135deg, #2d5016, #4a7c59); color: #fff; }
+
+    .faq-container { 
+      display: flex; 
+      gap: 40px; 
+      flex-wrap: wrap; 
+      justify-content: center; 
+      align-items: stretch;
+    }
+
+    .faq-image {
+      flex: 1;
+      min-width: 320px;
+      display: flex;
+      justify-content: center;
+      position: sticky;
+      top: 100px;
+      align-self: flex-start;
+    }
+    .faq-image img {
+      width: 100%;
+      height: 80vh;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+      display: block;
+    }
+
+    .faq-section { flex: 1; min-width: 320px; background: #fff; border-radius: 20px; padding: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+    .section-title { text-align: center; color: #2d5016; font-size: 2rem; margin-bottom: 30px; }
+
+    .faq-item { border: 1px solid #e8f5e8; border-radius: 15px; margin-bottom: 15px; overflow: hidden; }
+    .faq-question {
+      width: 100%;
+      background: #f0f9f0;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 25px 30px;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.1rem;
+    }
+    .faq-question::after { content: '+'; font-size: 1.5rem; color: #4a7c59; }
+    .faq-question.active { background: linear-gradient(135deg, #2d5016, #4a7c59); color: #fff; }
+    .faq-question.active::after { content: '-'; color: #fff; }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 30px;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+      font-size: 1rem;
+    }
+    .faq-answer.active { max-height: 700px; padding: 25px 30px; }
+
+    .hidden { display: none; }
+
+    @media(max-width: 768px) {
+      .faq-container { flex-direction: column; }
+      .faq-image { position: relative; top: 0; margin-bottom: 20px; }
+      .faq-image img { max-height: 400px; height: auto; }
+    }
+    </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+   <header id="header">
+  <div class="header-wrapper" style="display:flex; align-items:center; justify-content:space-between; padding:15px 20px;">
+
+    <!-- Left: Logo -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="Tech+Trust-Website-Images/logo.png" alt="Tech+Trust Logo" style="height:50px;">
+      </a>
+    </div>
+
+    <!-- Center: Main Nav -->
+    <nav class="nav-menu" style="margin-right:20px;"> <!-- add bigger margin-right -->
+      <ul class="nav-list" style="display:flex; gap:25px; list-style:none; margin:0; padding:0;">
+        <li><a href="index.html#hero" class="nav-link">Home</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#about" class="nav-link">About Us</a></li>
+        <li><a href="impact.html" class="nav-link">Impact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Right: FAQ & Contact -->
+    <div class="right-nav" style="display:flex; gap:20px; ">
+      <a href="#faq.html" class="nav-link active">FAQ</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </div>
+
+  </div>
+</header>
+  <div class="main-container">
+    <!-- Page Header -->
+    <div class="header">
+      <h1>Tech+Trust Ltd</h1>
+      <p>At Tech+Trust, we enhance poultry farming efficiency and support food security with our egg incubators, healthy chicks and hatching eggs.</p>
+    </div>
+
+    <!-- Language Switch -->
+    <div class="language-toggle">
+      <button class="lang-btn active" onclick="toggleLanguage('english')">English</button>
+      <button class="lang-btn" onclick="toggleLanguage('kinyarwanda')">Kinyarwanda</button>
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq-container">
+      <div class="faq-image">
+        <img src="Tech+Trust-Website-Images/Screenshot from 2025-09-18 17-24-18.png" alt="Poultry Farmer with Chickens">
+      </div>
+
+      <!-- English FAQ -->
+      <div id="english-faq" class="faq-section">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">1.What is the price of your egg incubators?</button>
+            <div class="faq-answer"><p>Prices vary depending on the size and current supplier rates. We’ll check updated prices and send you a memo within the day.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">2.Can I pay in installments?</button>
+            <div class="faq-answer"><p>Yes, you can pay 75% upfront, take the incubator, and pay the remaining amount after 21 days of hatchery operations.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">3.Do you offer discounts?</button>
+            <div class="faq-answer"><p>Yes, a 5% discount is offered if you pay the full amount immediately.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">4.Do you supply hatching eggs?</button>
+            <div class="faq-answer"><p>Currently, we recommend customers source their own. A breeder farm for Isa Brown layers is being developed to supply high-quality hatching eggs soon.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">5.What is the warranty on your incubators?</button>
+            <div class="faq-answer"><p>We provide a 6-month warranty covering defects and technical issues, with maintenance and upgrade support.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">6.Can I visit your poultry farms?</button>
+            <div class="faq-answer"><p>Visits to farms are not allowed due to biosecurity reasons. You can visit our head office to learn more and place orders.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">7.What breeds of chicks do you sell?</button>
+            <div class="faq-answer"><p>We offer Cobb 500, Ross 308 (broilers), Isa Brown, Lohmann Brown (layers), and Kuroiler hybrids.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">8.Are your chicks vaccinated?</button>
+            <div class="faq-answer"><p>Yes, all chicks are vaccinated before delivery.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">9.How soon can I get my order?</button>
+            <div class="faq-answer"><p>Delivery times depend on availability. Incubator orders may take 15–30 minutes to confirm price and stock. Chicks are scheduled based on hatch cycles.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">10.Do you provide technical support?</button>
+            <div class="faq-answer"><p>Yes, guidance is provided for setup, operation, maintenance, and poultry farming support.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">11.Can I buy feed directly from you?</button>
+            <div class="faq-answer"><p>Feeds are available exclusively for farmers in our Contract Farming Program, with priority supply, technical support, guaranteed market, and financial support opportunities.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kinyarwanda FAQ -->
+      <div id="kinyarwanda-faq" class="faq-section hidden">
+        <h2 class="section-title">Ibibazo Bikunze Kubazwa</h2>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">1.Ni angahe igiciro cya mashini yanyu Itera amagi (incubators)?</button>
+            <div class="faq-answer"><p>Igiciro gitandukana bitewe n’ingano n’ibiciro biriho. Tuzagenzura ibiciro by’ubu maze tukohereze raporo mu munsi umwe.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">2.Nshobora kwishyura mu byiciro?</button>
+            <div class="faq-answer"><p>Yego, wishyura 75% mbere, ufata incubator, amafaranga asigaye yishyurwa nyuma y’iminsi 21 y’imirimo yo gutera amagi.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">3.Mutanga kugabanya igiciro?</button>
+            <div class="faq-answer"><p>Yego, 5% kugabanya bihabwa iyo wishyuye yose ako kanya.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">4.Mutanga amagi yo gutera?</button>
+            <div class="faq-answer"><p>Ubu abakiriya bagomba kugira isoko yabo. Uruganda rw’ababyeyi rwa Isa Brown rurimo kubakwa kandi vuba tuzabasha gutanga amagi meza yo gutera.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">5.Ni garanti ingana iki kuri incubators zanyu?</button>
+            <div class="faq-answer"><p>Garanti y’amezi 6 ikubiyemo ibibazo bya tekiniki, hamwe no gufashwa mu gusana no kuzamura imikorere.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">6.Nshobora gusura amaturagiro yanyu y’inkoko?</button>
+            <div class="faq-answer"><p>Ntibishoboka ku mpamvu z’umutekano (biosecurity), ariko icyicaro gikuru kiraboneka gusura no kumenya byinshi.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">7.Ni izihe bwoko by’inkoko mutanga?</button>
+            <div class="faq-answer"><p>Dutanga Cobb 500, Ross 308 (broilers), Isa Brown, Lohmann Brown (layers), na Kuroiler (hybrid).</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">8.Inkoko zanyu zose ziba zikingiwe?</button>
+            <div class="faq-answer"><p>Yego, zikingirwa mbere yo gutangwa.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">9.Bitwara igihe kingana iki kubona gutumiza kwanjye?</button>
+            <div class="faq-answer"><p>Incubators: iminota 15–30 kugenzura igiciro n’ububiko. Inkoko: gahunda ishingiye ku munsi w’ivuka.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">10.Mutanga ubufasha bwa tekiniki?</button>
+            <div class="faq-answer"><p>Yego, inama zitangwa ku iyubakwa, imikorere, gusana incubators, no mu bworozi bw’inkoko.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">11.Nshobora kugura ibiryo by’amatungo kuri mwe?</button>
+            <div class="faq-answer"><p>Ibiryo bihabwa aborozi bari mu Contract Farming Program, harimo ibiryo byiza, ubufasha bwa tekiniki, isoko ryizewe n’amahirwe y’inkunga y’imari.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+       <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Tech+Trust-Website-Images/logo.png" alt="Tech+Trust Logo">
+                <p>Innovative incubation solutions for poultry farmers.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-envelope"></i> techplustrust@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i> 🇬🇧 +250 795 904 330</p>
+                <p><i class="fas fa-phone-alt"></i> 🇷🇼 +250 786 812 474</p>
+                <p><i class="fas fa-map-marker-alt"></i> Kigali, Rwanda</p>
+                
+                <div class="social-links" style="margin-top: 15px;">
+                    <a href="https://x.com/Techplusrwanda" target="_blank" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/techplus-trust-ltd" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/techplustrust.ltd" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 Tech+Trust Ltd. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+  <script>
+    function toggleAnswer(element) {
+      const answer = element.nextElementSibling;
+      element.classList.toggle('active');
+      answer.classList.toggle('active');
+    }
+
+    function toggleLanguage(language) {
+      const englishFAQ = document.getElementById('english-faq');
+      const kinyarwandaFAQ = document.getElementById('kinyarwanda-faq');
+      const buttons = document.querySelectorAll('.lang-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+
+      if (language === 'english') {
+        englishFAQ.classList.remove('hidden');
+        kinyarwandaFAQ.classList.add('hidden');
+        buttons[0].classList.add('active');
+      } else {
+        englishFAQ.classList.add('hidden');
+        kinyarwandaFAQ.classList.remove('hidden');
+        buttons[1].classList.add('active');
+      }
+    }
+  </script>
+
+</body>
+</html>
